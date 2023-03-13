@@ -20,7 +20,7 @@ model: "text-davinci-003", // required
 prompt: req.body.Body, // completion based on this
 temperature: 0.6, //
 n: 1,
-max_tokens: 1000,
+max_tokens: 500,
 // stop: "."
 });
 replyToBeSent = completion.data.choices[0].text
