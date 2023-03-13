@@ -39,9 +39,9 @@ res.writeHead(200, {
 });
 res.end(messageResponse.toString());
 }
-function removeIncompleteText(inputString) {
-    const match = inputString.match(/\b\.\s\d+/g);
-    const removeAfter = match ? inputString.slice(0, inputString.lastIndexOf(match[match.length - 1])) : inputString;
-    return removeAfter
-    }
-    removeIncompleteText(completion.data.choices[0].text)
+// function removeIncompleteText(inputString) {
+//     const match = inputString.match(/\b\.\s\d+/g);
+//     const removeAfter = match ? inputString.slice(0, inputString.lastIndexOf(match[match.length - 1])) : inputString;
+//     return removeAfter
+//     }
+//     removeIncompleteText(completion.data.choices[0].text)
